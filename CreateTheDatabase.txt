@@ -1,0 +1,41 @@
+DROP TABLE IF EXISTS ums;
+CREATE DATABASE IF NOT EXISTS ums;
+USE ums;
+
+DROP TABLE IF EXISTS user,course;
+
+CREATE TABLE user(
+userID INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(50),
+username VARCHAR(50),
+indexNo VARCHAR(50),
+password VARCHAR(50),
+PRIMARY KEY(userID)
+);
+
+CREATE TABLE lecture(
+lecID INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(50),
+username VARCHAR(50),
+indexNo VARCHAR(50),
+password VARCHAR(50),
+PRIMARY KEY(lecID)
+);
+
+CREATE TABLE course(
+crsID INT NOT NULL AUTO_INCREMENT,
+userNo INT(10),
+crsName VARCHAR(50),
+crsNo INT(10),
+PRIMARY KEY(crsID),
+FOREIGN KEY(userNo) REFERENCES user(userID)
+);
+
+CREATE TABLE leccourse(
+lccrsID INT NOT NULL AUTO_INCREMENT,
+userNo INT(10),
+crsName VARCHAR(50),
+crsNo INT(10),
+PRIMARY KEY(lccrsID),
+FOREIGN KEY(userNo) REFERENCES lecture(lecID)
+);

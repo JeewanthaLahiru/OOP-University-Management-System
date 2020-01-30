@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="umsGUI(2020_01_18)">
+    <output-path>$PROJECT_DIR$/out/artifacts/umsGUI_2020_01_18_</output-path>
+    <root id="root">
+      <element id="archive" name="umsGUI_2020_01_18_.jar">
+        <element id="module-output" name="umsGUI(2020_01_18)" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/com/company/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
